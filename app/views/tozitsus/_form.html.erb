@@ -1,0 +1,37 @@
+<%= form_for(@tozitsu) do |f| %>
+  <% if @tozitsu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tozitsu.errors.count, "error") %> prohibited this tozitsu from being saved:</h2>
+
+      <ul>
+      <% @tozitsu.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_area :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_area :address %>
+  </div>
+  <div class="field">
+    <%= f.label :kishu %><br>
+    <%= f.text_field :kishu %>
+  </div>
+  <div class="field">
+    <%= f.label :error %><br>
+    <%= f.text_field :error %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br>
+    <%= f.text_area :content %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

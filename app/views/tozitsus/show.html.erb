@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tozitsu.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @tozitsu.address %>
+</p>
+
+<p>
+  <strong>Kishu:</strong>
+  <%= @tozitsu.kishu %>
+</p>
+
+<p>
+  <strong>Error:</strong>
+  <%= @tozitsu.error %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @tozitsu.content %>
+</p>
+
+<%= link_to 'Edit', edit_tozitsu_path(@tozitsu) %> |
+<%= link_to 'Back', tozitsus_path %>
