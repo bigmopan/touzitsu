@@ -11,6 +11,8 @@
       <th>  異常コード  </th>
       <th>  備考  </th>
       <th>  受付画面  </th>
+      <th>  受付日時  </th>
+      <th>  再コール  </th>
       <th colspan="6"></th>
     </tr>
   </thead>
@@ -24,6 +26,8 @@
         <td><%= tozitsu.error %></td>
         <td><%= tozitsu.content %></td>
         <td><%= image_tag tozitsu.image.url %></td>
+        <td><%= tozitsu.uketsuke %></td>
+        <td><%= tozitsu.retry %></td>
         <td><%= link_to 'Show', tozitsu %></td>
         <td><%= link_to 'Edit', edit_tozitsu_path(tozitsu) %></td>
         <td><%= link_to 'Destroy', tozitsu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
