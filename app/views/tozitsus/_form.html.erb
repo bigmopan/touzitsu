@@ -32,6 +32,14 @@
     <%= f.text_area :content %>
     <%= f.file_field :image %>
   </div>
+  <div class="field">
+    <%= f.label :datetime %><br>
+    <%= f.date_select :datetime %>
+  </div>
+  <div class="field">
+    <%= f.label :retry %><br>
+    <%= f.check_box :retry %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
