@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170408074832) do
+ActiveRecord::Schema.define(version: 20170409025508) do
 
   create_table "tozitsus", force: :cascade do |t|
     t.text     "name",       limit: 65535
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20170408074832) do
     t.text     "content",    limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.string   "image",      limit: 255
   end
 
 end
