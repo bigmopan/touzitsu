@@ -27,7 +27,7 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @tozitsu.image %>
+  <%= image_tag @tozitsu.image.url %>
 </p>
 
 <%= link_to 'Edit', edit_tozitsu_path(@tozitsu) %> |
