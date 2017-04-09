@@ -69,6 +69,6 @@ class TozitsusController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tozitsu_params
-      params.require(:tozitsu).permit(:name, :address, :kishu, :error, :content, :image, :date, :retry)
+      params.require(:tozitsu).permit(:name, :address, :kishu, :error, :content, :image, :uketsuke, :retry)
     end
 end
