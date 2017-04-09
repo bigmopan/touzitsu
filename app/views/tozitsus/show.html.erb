@@ -30,5 +30,15 @@
   <%= image_tag @tozitsu.image.url %>
 </p>
 
+<p>
+  <strong>Date:</strong>
+  <%= @tozitsu.date %>
+</p>
+
+<p>
+  <strong>Retry:</strong>
+  <%= @tozitsu.retry %>
+</p>
+
 <%= link_to 'Edit', edit_tozitsu_path(@tozitsu) %> |
 <%= link_to 'Back', tozitsus_path %>
