@@ -55,3 +55,4 @@ end
 
 gem 'carrierwave'
 gem 'fog'
+gem 'devise'
